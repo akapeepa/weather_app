@@ -18,7 +18,7 @@ $(document).ready(function(){
 
         for(var i=1; i<=3; i++){
           var temprature = Math.round(data.list[i].main.temp - 273.5, 2);
-          var humidity = data.list[i].main.humidity;
+          var humidity = data.list[i].main.humidity+"%";
           var description = data.list[i].weather[0].description;
           var domElement=$('#day'+i);
           $(domElement).children('#temp').text(temprature);
